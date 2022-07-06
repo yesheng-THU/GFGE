@@ -14,19 +14,26 @@ This is repository with training and inference code for paper [**"Audio-Driven S
   - `conda activate GFGE`
 
 ## Getting started
-### Dataset
+### Datasets
 
 In this work, we conducted our experiments on two datasets: TED Dataset and Trinity Dataset.
 
-* For TED Dataset, you can download the raw data from [here](https://kaistackr-my.sharepoint.com/:u:/g/personal/zeroyy_kaist_ac_kr/EYAPLf8Hvn9Oq9GMljHDTK4BRab7rl9hAOcnjkriqL8qSg) (16GB) and extract the ZIP file into `../ted_dataset`. Then you can use the following command to preprocess the TED Dataset.
+* For TED Dataset, you can download the raw data from [here](https://kaistackr-my.sharepoint.com/:u:/g/personal/zeroyy_kaist_ac_kr/EYAPLf8Hvn9Oq9GMljHDTK4BRab7rl9hAOcnjkriqL8qSg) (16GB) and extract the ZIP file into `../ted_dataset`. Then you can use the following command to preprocess the TED Dataset:
 
   ```
   python data_processing/prepare_deepspeech_gesture_datasets.py
   ```
 
-  The processed data will be under the folder `data/locomotion`. We also provide the processed data:  for training the complete model and for visualizing the latent space.
+  The processed data will be under the folder `data/locomotion`. We also provide the [processed data](https://drive.google.com/file/d/18_mJ__wWAXZVSgkqCGC-NetOOd_bUgJ3/view?usp=sharing) for training the complete model and the [partial data](https://drive.google.com/file/d/1sdStqJ51X9TEF2MxNVjJneevqYsGfE1L/view?usp=sharing) for visualizing the latent space. You can directly download them and place them under the folder `data/locomotion`.
 
-* For Trinity Dataset, 
+
+* For Trinity Dataset, we used the [data](https://trinityspeechgesture.scss.tcd.ie/data/Trinity%20Speech-Gesture%20I/GENEA_Challenge_2020_data_release/) to train our models. Trinity College Dublin requires interested parties to sign a license agreement and receive approval before gaining access to this dataset. This is also the same data that was used for the [GENEA Challenge 2020](https://genea-workshop.github.io/2020/). Place the data under the `../trinity_dataset` folder and then run the following command:
+
+  ```
+  python data_processing/prepare_trinity_datasets.py
+  ```
+
+  The processed data will be under the folder `data/GENEA`.
 
 
 

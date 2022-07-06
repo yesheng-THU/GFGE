@@ -172,11 +172,11 @@ if __name__ == "__main__":
     window_overlap = 0.5
     fps = 20
 
-    data_root = '/data/yesheng/speech_gesture_generation/trinity_dataset/Training_data/'
+    data_root = '../trinity_dataset/Training_data/'
     bvhpath = os.path.join(data_root, 'Motion')
     audiopath = os.path.join(data_root, 'Audio')
     held_out = ['Recording_008']
-    processed_dir = '/data/yesheng/speech_gesture_generation/General/data/GENEA/upper'    
+    processed_dir = 'data/GENEA/full'
     
     files = []
     
@@ -221,9 +221,9 @@ if __name__ == "__main__":
     if not os.path.exists(motion_path):
         print('Processing motion features...')
         os.makedirs(motion_path)
-        extract_joint_angles(bvhpath, files, motion_path, fps, fullbody=False)
+        # extract_joint_angles(bvhpath, files, motion_path, fps, fullbody=False)
         # full body joint angles
-        # extract_joint_angles(bvhpath, files, motion_path, fps, fullbody=True)
+        extract_joint_angles(bvhpath, files, motion_path, fps, fullbody=True)
     else:
         print('Found motion features. skipping processing...')
     
