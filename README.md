@@ -36,10 +36,13 @@ In this work, we conducted our experiments on two datasets: TED Dataset and Trin
   The processed data will be under the folder `data/GENEA`.
 
 
-### Feature Extractor
+### Feature Extractors
 
 To successfully train and test our network, you also need to download some auxiliary files.
-Feature extractors are required to compute the Gesture Perceptual Loss. You can either train your own feature extractors (by running `python scripts/train_gp_loss.py`) or directly download our pretrained [feature extractors] and extract the ZIP file into `./feature_extractor`.
+Feature extractors are required to compute the **Gesture Perceptual Loss**. You can either train your own feature extractors (by running `python scripts/train_gp_loss.py`) or directly download our [pretrained feature extractors](https://drive.google.com/file/d/1l0qy_IkwL42Aa7NB03cEVR9-sV_b8lp5/view?usp=sharing) and extract the ZIP file into `./feature_extractor`.
+
+### Model Checkpoints
+
 
 
 <!-- 训练Trinity的指令 python scripts/train.py hparams/preferred/trinity.json trinity
