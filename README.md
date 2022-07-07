@@ -45,9 +45,23 @@ Feature extractors are required to compute the **Gesture Perceptual Loss**. You 
 
 ### Model Checkpoints
 
+We provide several pretrained model checkpoints. Download and extract these ZIP files into `./results`.
+
+* [model checkpoints](https://drive.google.com/file/d/1Oe-OvUIqlRSpAOtsXdqXyZ1sbzObCTXq/view?usp=sharing) that trained on complete TED Dataset.
+
+* [model checkpoints](https://drive.google.com/file/d/1u9QelzSKKaXVVMIYg7Cw1A6pgjvFOsFO/view?usp=sharing) that trained on Trinity Dataset (full body motion).
+
+* [model checkpoints](https://drive.google.com/file/d/1LR1_o3GU6soKt3O3sng7orkQTrljWJoA/view?usp=sharing) that trained on 15 person TED Dataset for latent space visualization.
+
 ### Usage
 
+First, please make sure that all requirements are satisfied and all required files are downloaded (see above steps).
 
+
+
+### Acknowledgement
+
+Note that the training and testing code of this repo is heavily rely on [MoGlow](https://github.com/simonalexanderson/StyleGestures) and [GTC](https://github.com/ai4r/Gesture-Generation-from-Trimodal-Context). We thank the authors for their great job!
 
 <!-- 训练Trinity的指令 python scripts/train.py hparams/preferred/trinity.json trinity
 测试Trinity的指令 python scripts/test_trinity_sample.py
