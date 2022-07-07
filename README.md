@@ -59,6 +59,11 @@ First, please make sure that all requirements are satisfied and all required fil
 
 
 
+### Results
+
+![TED](./teaser/ted.png)
+![Trinity](./teaser/trinity.png)
+
 ### Acknowledgement
 
 Note that the training and testing code of this repo is heavily rely on [MoGlow](https://github.com/simonalexanderson/StyleGestures) and [GTC](https://github.com/ai4r/Gesture-Generation-from-Trimodal-Context). We thank the authors for their great job!
