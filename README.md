@@ -57,7 +57,7 @@ We provide several pretrained model checkpoints. Download and extract these ZIP 
 
 First, please make sure that all requirements are satisfied and all required files are downloaded (see above steps).
 
-#### Train
+**Train**
 ```
 # train on ted dataset
 python scripts/train.py hparams/preferred/locomotion.json locomotion
@@ -66,26 +66,26 @@ python scripts/train.py hparams/preferred/locomotion.json locomotion
 python scripts/train.py hparams/preferred/trinity.json trinity
 ```
 
-#### sample
+**sample**
 ```
-# sample on ted dataset, the results will be under the folder './results/locomotion'
+# sample on ted dataset
 python scripts/test_locomotion_sample.py
 
-# sample on trinity dataset, the results will be under the folder './results/GENEA'
+# sample on trinity dataset
 python scripts/test_trinity_sample.py
 ```
 
-#### evaluate
+**evaluate**
 ```
 python scripts/cal_metrics.py
 ```
 
-#### Latent Space Visualization
+**Latent Space Visualization**
 ```
 python scripts/vis_latent_space.py
 ```
 
-#### Style Transfer
+**Style Transfer**
 ```
 python scripts/style_transfer.py
 ```
