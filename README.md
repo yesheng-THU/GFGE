@@ -57,7 +57,38 @@ We provide several pretrained model checkpoints. Download and extract these ZIP 
 
 First, please make sure that all requirements are satisfied and all required files are downloaded (see above steps).
 
+#### Train
+```
+# train on ted dataset
+python scripts/train.py hparams/preferred/locomotion.json locomotion
 
+# train on trinity dataset
+python scripts/train.py hparams/preferred/trinity.json trinity
+```
+
+#### sample
+```
+# sample on ted dataset, the results will be under the folder './results/locomotion'
+python scripts/test_locomotion_sample.py
+
+# sample on trinity dataset, the results will be under the folder './results/GENEA'
+python scripts/test_trinity_sample.py
+```
+
+#### evaluate
+```
+python scripts/cal_metrics.py
+```
+
+#### Latent Space Visualization
+```
+python scripts/vis_latent_space.py
+```
+
+#### Style Transfer
+```
+python scripts/style_transfer.py
+```
 
 ### Results
 
@@ -68,10 +99,3 @@ First, please make sure that all requirements are satisfied and all required fil
 
 Note that the training and testing code of this repo is heavily rely on [MoGlow](https://github.com/simonalexanderson/StyleGestures) and [GTC](https://github.com/ai4r/Gesture-Generation-from-Trimodal-Context). We thank the authors for their great job!
 
-<!-- 训练Trinity的指令 python scripts/train.py hparams/preferred/trinity.json trinity
-测试Trinity的指令 python scripts/test_trinity_sample.py
-生成结果会在results/GENEA下
-
-训练TED的指令 python scripts/train.py hparams/preferred/locomotion.json locomotion
-测试TED的指令 python scripts/test_locomotion_sample.py
-生成结果会在results/locomotion下 -->

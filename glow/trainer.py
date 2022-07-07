@@ -10,7 +10,7 @@ from .generator import Generator
 import torch
 import torch.nn as nn
 from .feature_extractor import *
-from scripts.cal_FGD import train_eval_FGD
+from scripts.cal_metrics import train_eval_FGD
 
 class Trainer(object):
     def __init__(self, graph, optim, lrschedule, loaded_step,
