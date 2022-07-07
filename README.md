@@ -24,7 +24,7 @@ In this work, we conducted our experiments on two datasets: TED Dataset and Trin
   python data_processing/prepare_deepspeech_gesture_datasets.py
   ```
 
-  The processed data will be under the folder `data/locomotion`. We also provide the [processed data](https://drive.google.com/file/d/18_mJ__wWAXZVSgkqCGC-NetOOd_bUgJ3/view?usp=sharing) for training the complete model and the [partial data](https://drive.google.com/file/d/1sdStqJ51X9TEF2MxNVjJneevqYsGfE1L/view?usp=sharing) for visualizing the latent space. You can directly download these NPZ files and place them under the folder `data/locomotion`.
+  The processed data will be under the folder `data/locomotion`. We also provide the [**processed data**](https://drive.google.com/file/d/18_mJ__wWAXZVSgkqCGC-NetOOd_bUgJ3/view?usp=sharing) for training the complete model and the [**partial data**](https://drive.google.com/file/d/1sdStqJ51X9TEF2MxNVjJneevqYsGfE1L/view?usp=sharing) for visualizing the latent space. You can directly download these NPZ files and place them under the folder `data/locomotion`.
 
 
 * For Trinity Dataset, we used the [data](https://trinityspeechgesture.scss.tcd.ie/data/Trinity%20Speech-Gesture%20I/GENEA_Challenge_2020_data_release/) to train our models. Trinity College Dublin requires interested parties to sign a license agreement and receive approval before gaining access to this dataset. This is also the same data that was used for the [GENEA Challenge 2020]. Place the data under the `../trinity_dataset` folder and then run the following command:
@@ -39,19 +39,19 @@ In this work, we conducted our experiments on two datasets: TED Dataset and Trin
 ### Feature Extractors
 
 * To successfully train and test our network, you also need to download some auxiliary files.
-Feature extractors are required to compute the **Gesture Perceptual Loss**. You can either train your own feature extractors (by running `python scripts/train_gp_loss.py`) or directly download our [pretrained feature extractors](https://drive.google.com/file/d/1l0qy_IkwL42Aa7NB03cEVR9-sV_b8lp5/view?usp=sharing) and extract the ZIP file into `./feature_extractor`.
+Feature extractors are required to compute the **Gesture Perceptual Loss**. You can either train your own feature extractors (by running `python scripts/train_gp_loss.py`) or directly download our [**pretrained feature extractors**](https://drive.google.com/file/d/1l0qy_IkwL42Aa7NB03cEVR9-sV_b8lp5/view?usp=sharing) and extract the ZIP file into `./feature_extractor`.
 
-* To calculate **FGD** metric during training and testing, you also need to download a [checkpoint](https://drive.google.com/file/d/1GPllMxd4mW_9e26upMJElhGC1AiHNIPg/view?usp=sharing) (the same as [Yoon et al.](https://github.com/ai4r/Gesture-Generation-from-Trimodal-Context) proposed) and place it under the folder `./feature_extractor`.
+* To calculate **FGD** metric during training and testing, you also need to download a [**checkpoint**](https://drive.google.com/file/d/1GPllMxd4mW_9e26upMJElhGC1AiHNIPg/view?usp=sharing) (the same as [Yoon et al.](https://github.com/ai4r/Gesture-Generation-from-Trimodal-Context) proposed) and place it under the folder `./feature_extractor`.
 
 ### Model Checkpoints
 
 We provide several pretrained model checkpoints. Download and extract these ZIP files into `./results`.
 
-* [model checkpoints](https://drive.google.com/file/d/1Oe-OvUIqlRSpAOtsXdqXyZ1sbzObCTXq/view?usp=sharing) that trained on complete TED Dataset.
+* [**model checkpoints**](https://drive.google.com/file/d/1Oe-OvUIqlRSpAOtsXdqXyZ1sbzObCTXq/view?usp=sharing) that trained on complete TED Dataset.
 
-* [model checkpoints](https://drive.google.com/file/d/1u9QelzSKKaXVVMIYg7Cw1A6pgjvFOsFO/view?usp=sharing) that trained on Trinity Dataset (full body motion).
+* [**model checkpoints**](https://drive.google.com/file/d/1u9QelzSKKaXVVMIYg7Cw1A6pgjvFOsFO/view?usp=sharing) that trained on Trinity Dataset (full body motion).
 
-* [model checkpoints](https://drive.google.com/file/d/1LR1_o3GU6soKt3O3sng7orkQTrljWJoA/view?usp=sharing) that trained on 15 person TED Dataset for latent space visualization.
+* [**model checkpoints**](https://drive.google.com/file/d/1LR1_o3GU6soKt3O3sng7orkQTrljWJoA/view?usp=sharing) that trained on 15 person TED Dataset for latent space visualization.
 
 ### Usage
 
