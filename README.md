@@ -90,12 +90,12 @@ python scripts/vis_latent_space.py
 python scripts/style_transfer.py
 ```
 
-### Results
+## Results
 
 ![TED](./teaser/ted.png)
 ![Trinity](./teaser/trinity.png)
 
-### Acknowledgement
+## Acknowledgement
 
 Note that the training and testing code of this repo is heavily rely on [MoGlow](https://github.com/simonalexanderson/StyleGestures) and [GTC](https://github.com/ai4r/Gesture-Generation-from-Trimodal-Context). We thank the authors for their great job!
 
