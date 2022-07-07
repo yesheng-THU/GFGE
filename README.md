@@ -66,7 +66,7 @@ python scripts/train.py hparams/preferred/locomotion.json locomotion
 python scripts/train.py hparams/preferred/trinity.json trinity
 ```
 
-**sample**
+**Sample**
 ```
 # sample on ted dataset
 python scripts/test_locomotion_sample.py
@@ -75,7 +75,7 @@ python scripts/test_locomotion_sample.py
 python scripts/test_trinity_sample.py
 ```
 
-**evaluate**
+**Evaluate**
 ```
 python scripts/cal_metrics.py
 ```
