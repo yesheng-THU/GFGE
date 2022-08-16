@@ -39,8 +39,7 @@ In this work, we conducted our experiments on two datasets: TED Dataset and Trin
 ### Feature Extractors
 
 * To successfully train and test our network, you also need to download some auxiliary files.
-Feature extractors are required to compute the **Gesture Perceptual Loss**. You can either train your own feature extractors (by running `python scripts/train_gp_loss.py`) or directly download our [**pretrained feature extractors**](
-https://drive.google.com/file/d/1kIn28oDDvRriy5rdt-XPzStyrmSDu4In/view?usp=sharing) and extract the ZIP file into `./feature_extractor`.
+Feature extractors are required to compute the **Gesture Perceptual Loss**. You can either train your own feature extractors (by running `python scripts/train_gp_loss.py`) or directly download our [**pretrained feature extractor**](https://drive.google.com/file/d/1qB8LfWaw2_Wo6WO9HcKqH4F_8QE-Vp3E/view?usp=sharing) and extract the ZIP file into `./feature_extractor`.
 
 * To calculate **FGD** metric during training and testing, you also need to download a [**checkpoint**](https://drive.google.com/file/d/1GPllMxd4mW_9e26upMJElhGC1AiHNIPg/view?usp=sharing) (the same as [Yoon et al.](https://github.com/ai4r/Gesture-Generation-from-Trimodal-Context) proposed) and place it under the folder `./feature_extractor`.
 
