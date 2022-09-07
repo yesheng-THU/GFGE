@@ -1,7 +1,7 @@
-# Audio-Driven Stylized Gesture Generation with Flow-Based Model (ECCV 2022)
+# GFGE
 ![Teaser image](./teaser/teaser.png)
 
-This is repository with training and inference code for paper [**"Audio-Driven Stylized Gesture Generation with Flow-Based Model"**].
+This is a repository with training and inference code for the paper [**"Audio-Driven Stylized Gesture Generation with Flow-Based Model"**].
 
 ## Requirements
 
